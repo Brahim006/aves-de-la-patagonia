@@ -7,6 +7,8 @@
 
 body{ font-family: 'Roboto', sans-serif; }
 
+h2{ text-align: center; }
+
 ul{ list-style: none; }
 
 a{ 
@@ -106,3 +108,15 @@ aside{
             font-weight: bold;
             font-size: 1rem;
         }
+/* ABOUT */
+#yt-frame{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+#yt-frame + p{
+    background-color: lavender;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
