@@ -36,10 +36,50 @@
             </nav><!-- /Navegación del sitio -->
 
             <main>
-                <h2>Contacto</h2>
-                <p>
-                    Mandá tus comentarios y sugerencias a <a href="mailto:brahimeduali@gmail.com">brahimeduali@gmail.com</a>
-                </p>
+                <div class="form-container">
+                    <form action="" method="POST">
+                        
+                        <div class="input-container">
+                            <label for="name"><span class="required-mark">*</span> Nombre</label>
+                            <input type="text" name="name" id="name" placeholder="John" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="last-name"><span class="required-mark">*</span> Apellido</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="email"><span class="required-mark">*</span> Email</label>
+                            <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="phone-number">Teléfono</label>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="29742974">
+                        </div>
+
+                        <div class="input-container">
+                            <label for="comment"><span class="required-mark">*</span> Dejanos tu comentario</label>
+                            <textarea name="comment" id="comment" cols="30" rows="10" required
+                            placeholder="Consulta ó comentario..."></textarea>
+                        </div>
+
+                        <div class="notify">
+                            <input type="checkbox" name="notify">Mantenerme informado
+                        </div>
+
+                        <p>
+                            Los campos marcados con <span class="required-mark">*</span> son obligatórios.
+                        </p>
+
+                        <div class="form-button-container">
+                            <button type="submit" class="white-black-contrast">Enviar</button>
+                            <button type="reset" class="white-black-contrast">Resetear</button>
+                        </div>
+
+                    </form>
+                </div>
             </main>
         </div><!-- /container -->
 
