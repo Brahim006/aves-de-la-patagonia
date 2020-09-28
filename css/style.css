@@ -163,6 +163,8 @@ aside{
 
     footer div ul{ justify-content: center; }
         footer div ul li{ margin: 0 15px; }
+    /* ABOUT */
+    #yt-frame{ height: 75%; }
 }
 
 @media (min-width : 1024px){ /* Diseño para PCs, laptos y tablets en horizontal */
