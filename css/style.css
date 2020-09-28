@@ -113,10 +113,21 @@ aside{
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
-#yt-frame + p{
+#yt-frame + p,
+.art-img + p{
     background-color: lavender;
     font-size: 0.7rem;
     text-align: center;
     padding: 5px;
     border-radius: 0 0 10px 10px;
 }
+/* ARTÍCULOS */
+.art-img{
+    width: 100%;
+    padding: 10px 10px 0;
+}
+.art-img + p{ 
+    margin: 0 10px; 
+    font-weight: bold;
+}
+    .art-img + p a { color: blue; }
