@@ -7,7 +7,7 @@
 
 body{ 
     font-family: 'Roboto', sans-serif; 
-    position: sticky;
+    position: absolute;
     min-height: 100vh; /* Asegura que se use toda la pantalla */
     font-size: 16px; /* Establece el valor de 1rem */
 }
@@ -46,7 +46,7 @@ nav{ margin: 2%; }
 footer{ 
     text-align: center;
     padding: 2vw;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100vw;
 }
@@ -163,4 +163,19 @@ aside{
 
     footer div ul{ justify-content: center; }
         footer div ul li{ margin: 0 15px; }
+}
+
+@media (min-width : 1024px){ /* Diseño para PCs, laptos y tablets en horizontal */
+    /* ESTRUCTURA BASE */
+    .container{ flex-wrap: nowrap; }
+        nav{ width: 25%; }
+        main{ width: 50%; }
+        aside{ 
+            width: 25%; 
+            height: max-content;
+            position: sticky;
+            top: 80px;
+        }
+    /* ARTÍCULOS */
+    .art-img + p{ margin: 0 10px 15px; }
 }
