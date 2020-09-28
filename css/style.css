@@ -178,4 +178,20 @@ aside{
         }
     /* ARTÍCULOS */
     .art-img + p{ margin: 0 10px 15px; }
+    /* TRANSFORMACIONES DEL HEADER */
+    header i{
+        transition: color 2s linear, font-size 1s linear;
+    }
+    header:hover i{
+        font-size: 3rem;
+        color: bisque;
+        animation: rotateBird 2s linear 1s infinite;
+    }
+}
+
+/* ANIMACIONES */
+@keyframes rotateBird{
+    25% { transform: rotate(-25deg); }
+    75% { transform: rotate(25deg); }
+    100% { transform: rotate(0); }
 }
